@@ -1,0 +1,1347 @@
+body{
+    background-color: #FFCC00;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.judul img{
+    width: 600px;
+    height: 100px;
+}
+.judul h2{
+    font-family: 'BankGothic Md BT', Courier, monospace;
+    font-size: 1.4rem;
+}
+.judul{
+    /* border: 2px solid blue; */
+    width: 60%;
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+}
+.gambar{
+    width: 96%;
+    height: 60vh;
+    background-color: #FFA500;
+    margin-left: 4%;
+    position: relative;
+  
+}
+/* .gambar img{
+    width: 100%;
+    height: 50vh;
+} */
+.gambar2{
+    width: 100%;
+    height: 60vh;
+    background-image: url('bunga_latar_belakang.webp');
+    position: relative;
+}
+.segiempat{
+    width: 15%;
+    height: 27%;
+    border-right: transparent;
+    background-color: #FFCC00;
+}
+.segitiga{
+    width: 0;
+    height: 0;
+    border-top: 8vh solid transparent;
+    border-bottom: 8vh solid transparent;
+    border-left: 16vh solid #FFCC00;
+}
+.bangunan{
+    width: 70%;
+    height: 60vh;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.bangunan h1{
+    font-family: 'BankGothic Md BT', Courier, monospace;
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-left: 5%;
+    /* border: 1.0px solid blue; */
+    color: aliceblue;
+}
+.bangunan h2{
+    font-family: 'BankGothic Md BT', Courier, monospace;
+    /* border: 2px solid blue; */
+    margin-left: 5%;
+    font-size: 2.2rem;
+    margin-top: -5%;
+    color: aliceblue;
+}
+.tulisan{
+    /* border: 2px solid blue; */
+    width: 100%;
+    
+}
+.tentang_kami{
+    background-image: url('converted_image.webp');
+    width: 18%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.menu{
+    width: 96%;
+    height: 60vh;
+    margin-left: 4%;
+    /* border: 2px solid blue; */
+    /* background-color: blue; */
+    top: 10%;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.good{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid green; */
+}
+/* .menu1{
+    width: 70%;
+    border: 2px solid blue;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+} */
+/* .lingkaran{
+    width: 70%;
+    height: 25%;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 4%;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+.test{
+    width: 150px;
+    height: 150px;
+    margin-left: 3%;
+    background-color: gold;
+    border-radius: 50%;
+    position: relative;
+}
+.test::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 64px solid gold; /* Segitiga lebih besar */
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    top: 50%;
+    right: -35px; /* Menyesuaikan agar segitiga tetap menyatu */
+    transform: translateY(-50%);
+    z-index: 1; /* Tetap di bawah */
+}
+.we{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Lebih tinggi dari segitiga */
+}
+.we h2{
+    text-align: center;
+    /* margin-top: 60%; */
+}
+.gambar_good{
+    width: 35%;
+    height: 100%;
+    /* border: 2px solid white; */
+}
+.gambar_good img{
+    width: 80%;
+    margin-left: 10%;
+}
+
+/* .menu{
+    width: 96%;
+    margin-left: 4%;
+    height: 60vh;
+    border: 2px solid blue;
+    background: linear-gradient(to bottom, #FFCC00 50%, #FFA500 50%),url('bunga_latar_belakang.webp');
+    background-size: 100% 100%, 100% 50%;
+    background-position: top,bottom;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+} */
+@media (max-width: 320px){
+    dialog {
+        width: 500px;
+        background-color: #FFCC00;
+        padding: 20px;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+        font-family:  'BankGothic Md BT', Courier, monospace;;
+    }
+    dialog h1{
+        text-transform: uppercase;
+    }
+    dialog p{
+        font-size: 1.2rem;
+        font-weight: 200;
+        text-transform: capitalize;
+    }
+    dialog .button{
+        width: 100%;
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    dialog button{
+        width: 30%;
+        padding: 10px;
+    }
+    /* Gaya backdrop */
+    dialog::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    dialog a{
+        color: blue;
+        border: none;
+    }
+    .home{
+        width: 100%;
+        height: 100vh;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .judul {
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid blue; */
+        width: 100%;
+    }
+    .judul img{
+        width: 100%;
+        height: 100%;
+    }
+    .judul h2{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .we{
+        width: 90%;
+        height: 80px;
+        /* display: none; */
+    }
+    .we h2{
+        font-size: 0.6rem;
+        margin-top: 60%;
+    }
+    .we #tentang{
+        margin-top: 60%;
+    }
+    .we #mitra{
+        margin-top: 60%;
+    }
+    .menu{
+        /* border: 2px solid blue; */
+        margin-left: 0%;
+    }
+    .good{
+        /* border: 2px solid blue; */
+        width: 100%;
+    }
+    .test{
+        width: 100px;
+        height: 100px;
+        margin-left: 1%;
+        border: 4px solid whitesmoke;
+    
+    }
+    .test::after{
+        display: none;
+    }
+    .gambar_good{
+        display: none;
+    }
+    .gambar{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .segitiga{
+        display: none;
+    }
+    .segiempat{
+        display: none;
+    }
+    .contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .contact img{
+        width: 50px;
+        height: 50px;
+    }
+    .bangunan{
+        width: 100%;
+        height: 44vh;
+    }
+    /* .tulisan{
+        border: 2px solid blue;
+    } */
+    .bangunan h1{
+        font-size: 2.0rem;
+        margin-left: 0%;
+        text-align: center;
+    }
+    .bangunan h2{
+        font-size: 1.2rem;
+        text-align: center;
+        margin-left: 0%;
+    }
+}
+
+@media (min-width: 360px){
+    dialog {
+        width: 500px;
+        background-color: #FFCC00;
+        padding: 20px;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+        font-family:  'BankGothic Md BT', Courier, monospace;;
+    }
+    dialog h1{
+        text-transform: uppercase;
+    }
+    dialog p{
+        font-size: 1.2rem;
+        font-weight: 200;
+        text-transform: capitalize;
+    }
+    dialog .button{
+        width: 100%;
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    dialog button{
+        width: 30%;
+        padding: 10px;
+    }
+    /* Gaya backdrop */
+    dialog::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    dialog a{
+        color: blue;
+        border: none;
+    }
+    .home{
+        width: 100%;
+        height: 100vh;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .judul {
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid blue; */
+        width: 100%;
+    }
+    .judul img{
+        width: 100%;
+        height: 100%;
+    }
+    .judul h2{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .we{
+        width: 90%;
+        /* display: none; */
+    }
+    .we h2{
+        font-size: 0.8rem;
+        margin-top: 74%;
+    }
+    .menu{
+        /* border: 2px solid blue; */
+        margin-left: 0%;
+    }
+    .good{
+        /* border: 2px solid blue; */
+        width: 100%;
+    }
+    .test{
+        width: 140px;
+        height: 140px;
+        margin-left: 1%;
+        border: 4px solid whitesmoke;
+    
+    }
+    .test::after{
+        display: none;
+    }
+    .gambar_good{
+        display: none;
+    }
+    .gambar{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .segitiga{
+        display: none;
+    }
+    .segiempat{
+        display: none;
+    }
+    .bangunan{
+        width: 100%;
+        height: 48vh;
+    }
+    .contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    /* .tulisan{
+        border: 2px solid blue;
+    } */
+    .bangunan h1{
+        font-size: 3.0rem;
+        margin-top: 22%;
+        margin-left: 0%;
+        text-align: center;
+    }
+    .bangunan h2{
+        font-size: 1.8rem;
+        margin-left: 0%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 480px){
+    dialog {
+        width: 500px;
+        background-color: #FFCC00;
+        padding: 20px;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+        font-family:  'BankGothic Md BT', Courier, monospace;;
+    }
+    dialog h1{
+        text-transform: uppercase;
+    }
+    dialog p{
+        font-size: 1.2rem;
+        font-weight: 200;
+        text-transform: capitalize;
+    }
+    dialog .button{
+        width: 100%;
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    dialog button{
+        width: 30%;
+        padding: 10px;
+    }
+    /* Gaya backdrop */
+    dialog::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    dialog a{
+        color: blue;
+        border: none;
+    }
+    .home{
+        width: 100%;
+        height: 100vh;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .judul {
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid blue; */
+        width: 100%;
+    }
+    .judul img{
+        width: 100%;
+        height: 100%;
+    }
+    .judul h2{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .we{
+        width: 90%;
+        /* display: none; */
+    }
+    .we h2{
+        font-size: 0.9rem;
+        margin-top: 74%;
+    }
+    .menu{
+        /* border: 2px solid blue; */
+        margin-left: 0%;
+    }
+    .good{
+        /* border: 2px solid blue; */
+        width: 100%;
+    }
+    .test{
+        width: 140px;
+        height: 140px;
+        margin-left: 1%;
+        border: 4px solid whitesmoke;
+    
+    }
+    .test::after{
+        display: none;
+    }
+    .gambar_good{
+        display: none;
+    }
+    .gambar{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .segitiga{
+        display: none;
+    }
+    .segiempat{
+        display: none;
+    }
+    .bangunan{
+        width: 100%;
+        height: 48vh;
+        /* border: 2px solid blue; */
+    }
+    .contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    /* .tulisan{
+        border: 2px solid blue;
+    } */
+    .bangunan h1{
+        font-size: 3.0rem;
+        margin-top: 22%;
+        margin-left: 0%;
+        text-align: center;
+    }
+    .bangunan h2{
+        font-size: 1.8rem;
+        margin-left: 0%;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 770px){
+    dialog {
+        width: 500px;
+        background-color: #FFCC00;
+        padding: 20px;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+        font-family:  'BankGothic Md BT', Courier, monospace;;
+    }
+    dialog h1{
+        text-transform: uppercase;
+    }
+    dialog p{
+        font-size: 1.2rem;
+        font-weight: 200;
+        text-transform: capitalize;
+    }
+    dialog .button{
+        width: 100%;
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    dialog button{
+        width: 30%;
+        padding: 10px;
+    }
+    /* Gaya backdrop */
+    dialog::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    dialog a{
+        color: blue;
+        border: none;
+    }
+    .home{
+        width: 100%;
+        height: 100vh;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .judul {
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid blue; */
+        width: 100%;
+    }
+    .judul img{
+        width: 100%;
+        height: 100%;
+    }
+    .judul h2{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .we{
+        width: 90%;
+        height: 90%;
+        /* display: none; */
+    }
+    .we h2{
+        font-size: 1.2rem;
+        margin-top: 40%;
+    }
+    .menu{
+        /* border: 2px solid blue; */
+        margin-left: 0%;
+    }
+    .good{
+        /* border: 2px solid blue; */
+        position: absolute;
+        top: 34%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    #bulat_produk{
+        margin-left: 50%;
+    }
+    #bulat_mulai{
+        margin-left: 50%;
+    }
+    .test{
+        width: 160px;
+        height: 160px;
+        margin-left: 10%;
+        border: 4px solid whitesmoke;
+    
+    }
+    .test::after{
+        display: none;
+    }
+    .gambar_good{
+        display: none;
+    }
+    .gambar{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .segitiga{
+        display: none;
+    }
+    .segiempat{
+        display: none;
+    }
+    .bangunan{
+        width: 100%;
+        height: 48vh;
+        /* border: 2px solid blue; */
+    }
+    .contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .contact img{
+        width: 80px;
+    }
+    /* .tulisan{
+        border: 2px solid blue;
+    } */
+    .bangunan h1{
+        font-size: 3.4rem;
+        margin-top: 36%;
+        margin-left: 0%;
+        text-align: center;
+    }
+    .bangunan h2{
+        font-size: 2.0rem;
+        margin-left: 0%;
+        text-align: center;
+    }
+}
+
+@media (min-width:800px) and (max-width:1024px) {
+    dialog {
+        width: 500px;
+        background-color: #FFCC00;
+        padding: 20px;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+        font-family:  'BankGothic Md BT', Courier, monospace;;
+    }
+    dialog h1{
+        text-transform: uppercase;
+    }
+    dialog p{
+        font-size: 1.2rem;
+        font-weight: 200;
+        text-transform: capitalize;
+    }
+    dialog .button{
+        width: 100%;
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    dialog button{
+        width: 30%;
+        padding: 10px;
+    }
+    /* Gaya backdrop */
+    dialog::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    dialog a{
+        color: blue;
+        border: none;
+    }
+    .home{
+        width: 100%;
+        height: 100vh;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .judul {
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid blue; */
+        width: 100%;
+    }
+    .judul img{
+        width: 100%;
+        height: 100%;
+    }
+    .judul h2{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .we{
+        width: 90%;
+        height: 90%;
+        /* display: none; */
+    }
+    .we h2{
+        font-size: 1.6rem;
+        margin-top: 30%;
+    }
+    .menu{
+        /* border: 2px solid blue; */
+        margin-left: 0%;
+    }
+    .good{
+        /* border: 2px solid blue; */
+        position: absolute;
+        top: 34%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    #bulat_produk{
+        margin-left: 55%;
+    }
+    #bulat_mulai{
+        margin-left: 50%;
+    }
+    .test{
+        width: 200px;
+        height: 200px;
+        margin-left: 10%;
+        border: 4px solid whitesmoke;
+    
+    }
+    .test::after{
+        display: none;
+    }
+    .gambar_good{
+        display: none;
+    }
+    .gambar{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .segitiga{
+        display: none;
+    }
+    .segiempat{
+        display: none;
+    }
+    .bangunan{
+        width: 100%;
+        height: 48vh;
+        /* border: 2px solid blue; */
+    }
+    .contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .contact img{
+        width: 100px;
+    }
+    /* .tulisan{
+        border: 2px solid blue;
+    } */
+    .bangunan h1{
+        font-size: 4.8rem;
+        margin-top: 40%;
+        margin-left: 0%;
+        text-align: center;
+    }
+    .bangunan h2{
+        font-size: 3.0rem;
+        margin-left: 0%;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1500px){
+    body{
+        background-color: #FFCC00;
+    }
+    dialog {
+        width: 500px;
+        background-color: #FFCC00;
+        padding: 20px;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+        font-family:  'BankGothic Md BT', Courier, monospace;;
+    }
+    dialog h1{
+        text-transform: uppercase;
+    }
+    dialog p{
+        font-size: 1.2rem;
+        font-weight: 200;
+        text-transform: capitalize;
+    }
+    dialog .button{
+        width: 100%;
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    dialog button{
+        width: 30%;
+        padding: 10px;
+    }
+    /* Gaya backdrop */
+    dialog::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    dialog a{
+        color: blue;
+        border: none;
+    }
+    .home{
+        width: 100%;
+        height: 100vh;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .judul img{
+        width: 600px;
+        height: 100px;
+    }
+    .judul h2{
+        font-family: 'BankGothic Md BT', Courier, monospace;
+        font-size: 1.4rem;
+    }
+    .judul{
+        /* border: 2px solid blue; */
+        width: 60%;
+        height: 28vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        position: relative;
+    }
+    .gambar{
+        width: 96%;
+        height: 60vh;
+        background-color: #FFA500;
+        margin-left: 4%;
+        position: relative;
+      
+    }
+    /* .gambar img{
+        width: 100%;
+        height: 50vh;
+    } */
+    .gambar2{
+        width: 100%;
+        height: 60vh;
+        background-image: url('bunga_latar_belakang.webp');
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+    }
+    .segiempat{
+        display: inline;
+        width: 15%;
+        height: 27%;
+        border-right: transparent;
+        background-color: #FFCC00;
+    }
+    .segitiga{
+        display: inline;
+        width: 0;
+        height: 0;
+        border-top: 8vh solid transparent;
+        border-bottom: 8vh solid transparent;
+        border-left: 16vh solid #FFCC00;
+    }
+    .contact{
+        width: 30%;
+        /* border: 2px solid green; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 2%;
+    }
+    .contact img{
+        width: 16%;
+    }
+    .bangunan{
+        width: 70%;
+        height: 60vh;
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .bangunan h1{
+        font-family: 'BankGothic Md BT', Courier, monospace;
+        font-size: 4rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-left: 5%;
+        margin-top: 0%;
+        /* border: 1.0px solid blue; */
+        color: aliceblue;
+    }
+    .bangunan h2{
+        font-family: 'BankGothic Md BT', Courier, monospace;
+        /* border: 2px solid blue; */
+        margin-left: 5%;
+        font-size: 2.2rem;
+        margin-top: -5%;
+        color: aliceblue;
+    }
+    .tulisan{
+        /* border: 2px solid blue; */
+        width: 100%;
+        
+    }
+    .tentang_kami{
+        background-image: url('converted_image.webp');
+        width: 18%;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+    .menu{
+        width: 96%;
+        height: 60vh;
+        margin-left: 4%;
+        /* border: 2px solid blue; */
+        /* background-color: blue; */
+        top: 10%;
+        z-index: 2;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .good{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        /* border: 2px solid green; */
+    }
+    /* .menu1{
+        width: 70%;
+        border: 2px solid blue;
+        background-color: green;
+        display: flex;
+        flex-direction: row;
+    } */
+    /* .lingkaran{
+        width: 70%;
+        height: 25%;
+        border-radius: 50%;
+        background-color: white;
+        margin-left: 4%;
+        margin-top: 7%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    } */
+    .test{
+        width: 150px;
+        height: 150px;
+        margin-left: 3%;
+        background-color: gold;
+        border-radius: 50%;
+        position: relative;
+        border: 4px solid whitesmoke;
+    }
+    .test::after{
+        display: inline;
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 64px solid gold; /* Segitiga lebih besar */
+        border-top: 60px solid transparent;
+        border-bottom: 60px solid transparent;
+        top: 50%;
+        right: -35px; /* Menyesuaikan agar segitiga tetap menyatu */
+        transform: translateY(-50%);
+        z-index: 1; /* Tetap di bawah */
+        filter: drop-shadow(4px 0px 0px whitesmoke);
+    }
+    .we{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2; /* Lebih tinggi dari segitiga */
+    }
+    .we h2{
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 30%;
+        /* margin-top: 60%; */
+    }
+    .gambar_good{
+        width: 35%;
+        height: 100%;
+        display: inline;
+        /* border: 2px solid white; */
+    }
+    .gambar_good img{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media (min-width: 1501px){
+    body{
+        background-color: #FFCC00;
+    }
+    dialog {
+        width: 500px;
+        background-color: #FFCC00;
+        padding: 20px;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+        font-family:  'BankGothic Md BT', Courier, monospace;;
+    }
+    dialog h1{
+        text-transform: uppercase;
+    }
+    dialog p{
+        font-size: 1.2rem;
+        font-weight: 200;
+        text-transform: capitalize;
+    }
+    dialog .button{
+        width: 100%;
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    dialog button{
+        width: 30%;
+        padding: 10px;
+    }
+    /* Gaya backdrop */
+    dialog::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    dialog a{
+        color: blue;
+        border: none;
+    }
+    .home{
+        width: 100%;
+        height: 100vh;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .home{
+        width: 100%;
+        height: 100vh;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .judul img{
+        width: 600px;
+        height: 100px;
+    }
+    .judul h2{
+        font-family: 'BankGothic Md BT', Courier, monospace;
+        font-size: 1.4rem;
+    }
+    .judul{
+        /* border: 2px solid blue; */
+        width: 60%;
+        height: 28vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        position: relative;
+    }
+    .gambar{
+        width: 96%;
+        height: 60vh;
+        background-color: #FFA500;
+        margin-left: 4%;
+        position: relative;
+      
+    }
+    /* .gambar img{
+        width: 100%;
+        height: 50vh;
+    } */
+    .gambar2{
+        width: 100%;
+        height: 60vh;
+        background-image: url('bunga_latar_belakang.webp');
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+    }
+    .segiempat{
+        display: inline;
+        width: 15%;
+        height: 27%;
+        border-right: transparent;
+        background-color: #FFCC00;
+    }
+    .segitiga{
+        display: inline;
+        width: 0;
+        height: 0;
+        border-top: 8vh solid transparent;
+        border-bottom: 8vh solid transparent;
+        border-left: 16vh solid #FFCC00;
+    }
+    .contact{
+        width: 30%;
+        /* border: 2px solid green; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 2%;
+    }
+    .contact img{
+        width: 16%;
+    }
+    .bangunan{
+        width: 70%;
+        height: 60vh;
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .bangunan h1{
+        font-family: 'BankGothic Md BT', Courier, monospace;
+        font-size: 4rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-left: 0%;
+        margin-top: 0%;
+        /* border: 1.0px solid blue; */
+        color: aliceblue;
+    }
+    .bangunan h2{
+        font-family: 'BankGothic Md BT', Courier, monospace;
+        /* border: 2px solid blue; */
+        margin-left: 5%;
+        font-size: 2.2rem;
+        margin-top: -5%;
+        color: aliceblue;
+    }
+    .tulisan{
+        /* border: 2px solid blue; */
+        width: 100%;
+        
+    }
+    .tentang_kami{
+        background-image: url('converted_image.webp');
+        width: 18%;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+    .menu{
+        width: 96%;
+        height: 60vh;
+        margin-left: 4%;
+        /* border: 2px solid blue; */
+        /* background-color: blue; */
+        top: 10%;
+        z-index: 2;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .good{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        /* border: 2px solid green; */
+    }
+    /* .menu1{
+        width: 70%;
+        border: 2px solid blue;
+        background-color: green;
+        display: flex;
+        flex-direction: row;
+    } */
+    /* .lingkaran{
+        width: 70%;
+        height: 25%;
+        border-radius: 50%;
+        background-color: white;
+        margin-left: 4%;
+        margin-top: 7%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    } */
+    .test{
+        width: 150px;
+        height: 150px;
+        margin-left: 3%;
+        background-color: gold;
+        border-radius: 50%;
+        position: relative;
+        border: 4px solid whitesmoke;
+    }
+    .test::after{
+        display: inline;
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 64px solid gold; /* Segitiga lebih besar */
+        border-top: 60px solid transparent;
+        border-bottom: 60px solid transparent;
+        top: 50%;
+        right: -35px; /* Menyesuaikan agar segitiga tetap menyatu */
+        transform: translateY(-50%);
+        z-index: 1; /* Tetap di bawah */
+        filter: drop-shadow(4px 0px 0px whitesmoke);
+    }
+    .we{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2; /* Lebih tinggi dari segitiga */
+    }
+    .we h2{
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 30%;
+        /* margin-top: 60%; */
+    }
+    .gambar_good{
+        width: 35%;
+        height: 100%;
+        display: inline;
+        /* border: 2px solid white; */
+    }
+    .gambar_good img{
+        width: 80%;
+        margin-left: 10%;
+    }
+}

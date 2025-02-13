@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patriot Konstraksi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <dialog id="myDialog">
+        <h1>Peyampaian</h1>
+        <p>Sedang ada perbaikan</p>
+        <p>Silakang Hubungi ke kontak whatshaap kami jika ingin berkomunikasi !</p>
+        <a href="#" id="a_link">Klik Untuk Whatshaap</a>
+        <div class="button">
+            <button id="closeDialog">Tutup</button>
+
+        </div>
+    </dialog>
+
+    <div class="home">
+        <div class="judul">
+            <img src="judul_resized.webp" alt="Judul" loading="lazy">
+            <h2>Design • Construction • Maintenance Service</h2>
+        </div>
+        <!-- <div class="menu">
+            <div class="menu1">
+                <div class="tentang_kami">
+                    <img src="tentang_kami.webp" alt="tentang_kami" loading="lazy">
+                     <div class="lingkaran"></div>
+                </div>
+                <div class="tentang_kami"></div>
+                <div class="tentang_kami"></div>
+                <div class="tentang_kami"></div>
+                <div class="tentang_kami"></div>
+            </div>
+        </div> -->
+        <div class="menu">
+            <div class="good">
+                <div class="test" id="bulat_kami">
+                    <div class="we" id="dialog_kami"><h2 id="tentang">Tentang Kami</h2></div>
+                </div>
+                <div class="test" id="bulat_mitra">
+                    <div class="we" id="dialog_mitra"><h2 id="mitra">Mitra dan Projek</h2></div>
+                </div>
+                <div class="test" id="bulat_tim">
+                    <div class="we" id="dialog_tim"><h2 id="tim">Tim dan Alur Kerja</h2></div>
+                </div>
+                <div class="test" id="bulat_produk">
+                    <div class="we" id="dialog_produk"><h2 id="produk">Produk Layanan</h2></div>
+                </div>
+                <div class="test" id="bulat_mulai">
+                    <div class="we" id="dialog_mulai"><h2 id="mulai">Mulai Project Anda</h2></div>
+                </div>
+
+            </div>
+            <div class="gambar_good">
+                <img src="gambar_judul.webp" alt="gambar_judul" loading="lazy">
+            </div>
+        </div>
+        <div class="gambar">
+            <div class="gambar2">
+                <div class="bangunan">
+                    <div class="segiempat"></div>
+                    <div class="segitiga"></div>
+                    <div class="tulisan">
+                        <h1>Build Together</h1>
+                        <h2>Build The Best</h2>
+                    </div>
+
+                </div>
+                <div class="contact">
+                    <img src="wa.webp" id='wa' alt="wa" loading="lazy">
+                    <img src="fb.webp" alt="fb" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const dialog = document.getElementById("myDialog");
+        const openBtn = document.getElementById("dialog_kami");
+        const mitra = document.getElementById("dialog_mitra");
+        const tim = document.getElementById("dialog_tim");
+        const produk = document.getElementById("dialog_produk");
+        const mulai = document.getElementById("dialog_mulai");
+        const closeBtn = document.getElementById("closeDialog");
+        const bulat_produk = document.getElementById("bulat_produk");
+        const bulat_mulai = document.getElementById("bulat_mulai");
+        const bulat_kami = document.getElementById("bulat_kami");
+        const bulat_mitra = document.getElementById("bulat_mitra");
+        const bulat_tim = document.getElementById("bulat_tim");
+        const wa = document.getElementById("wa");
+        const a_link = document.getElementById("a_link");
+
+        function goToWhatsApp() {
+            const pesan = 'Hai Saya ingin bertanya'
+
+            const part1 = "628";
+            const part2 = "539";
+            const part3 = "4188801";
+            const nomor = part1 + part2 + part3;
+            // +62 853-9418-8801
+            const url = `https://wa.me/${nomor}?text=${encodeURIComponent(pesan)}`;;
+            window.location.href = url;
+        }
+
+        wa.addEventListener("click", goToWhatsApp);
+        openBtn.addEventListener("click", () => {
+            dialog.showModal(); // Membuka dialog sebagai modal
+        });
+        a_link.addEventListener("click",goToWhatsApp);
+        bulat_produk.addEventListener("click", () => {
+            dialog.showModal(); // Membuka dialog sebagai modal
+        });
+        bulat_mulai.addEventListener("click", () => {
+            dialog.showModal(); // Membuka dialog sebagai modal
+        });
+        bulat_kami.addEventListener("click", () => {
+            dialog.showModal(); // Membuka dialog sebagai modal
+        });
+        bulat_mitra.addEventListener("click", () => {
+            dialog.showModal(); // Membuka dialog sebagai modal
+        });
+        bulat_tim.addEventListener("click", () => {
+            dialog.showModal(); // Membuka dialog sebagai modal
+        });
+        mitra.addEventListener("click", () => {
+            dialog.showModal(); // Membuka dialog sebagai modal
+        });
+        tim.addEventListener("click", () => {
+            dialog.showModal(); // Membuka dialog sebagai modal
+        });
+        produk.addEventListener("click", () => {
+            dialog.showModal(); // Membuka dialog sebagai modal
+        });
+        mulai.addEventListener("click", () => {
+            dialog.showModal(); // Membuka dialog sebagai modal
+        });
+
+        closeBtn.addEventListener("click", () => {
+            dialog.close(); // Menutup dialog
+        });
+    </script>
+</body>
+</html>

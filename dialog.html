@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog Muncul Otomatis</title>
+    <style>
+        dialog {
+            width: 300px;
+            padding: 20px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Gaya backdrop */
+        dialog::backdrop {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <dialog id="myDialog">
+        <p>Ini adalah dialog yang muncul otomatis saat halaman dimuat.</p>
+        <button id="closeDialog">Tutup</button>
+    </dialog>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dialog = document.getElementById("myDialog");
+            const closeBtn = document.getElementById("closeDialog");
+
+            if (dialog) {
+                dialog.showModal(); // Muncul otomatis
+            }
+
+            closeBtn.addEventListener("click", () => {
+                dialog.close();
+            });
+
+            // Menutup dialog jika klik di luar modal
+            dialog.addEventListener("click", (event) => {
+                if (event.target === dialog) {
+                    dialog.close();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
